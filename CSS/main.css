@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+:root {
+  --var--black: #1c1d21;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* .navber__link__item::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  left: 50%;
+  bottom: -2.5px;
+  transform: translateX(-50%);
+  border-radius: 100px;
+  transition: width 300ms ease-in-out;
+}
+.navber__link__item:hover::after {
+  width: 100%;
+} */

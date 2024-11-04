@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/CSS/main.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              defult: "1rem",
+              sm: 0,
+            },
+          },
+          fontFamily: {
+            sans: ["Nunito Sans", "sans-serif"],
+          },
+          extend: {
+            colors: {
+              black: "#1c1d21",
+              white: "#ffffff",
+              grey: "#f5f5f5",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="shortcut icon"
+      href="./assets/pearl-necklace.png"
+      type="image/x-icon"
+    />
+    <title>Elegance Jewellery</title>
+  </head>
+  <body class="bg-white text-black overflow-x-hidden">
+    <!-- HEADER -->
+    <header class="w-full bg-grey">
+      <nav
+        class="w-full flex items-center justify-between gap-10 container mx-auto font-bold h-24"
+      >
+        <!-- LOGO -->
+        <a class="text-2xl flex items-center" href="#"
+          >Elegance <br class="md:hidden" />Jewellery
+          <span class="text-[#FFD700]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-9"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
+              />
+            </svg> </span
+        ></a>
+
+        <!-- SECTION LINKS -->
+        <ul class="md:flex items-center hidden md:gap-3.5">
+          <li>
+            <a class="" href="#">Home</a>
+          </li>
+          <li>
+            <a href="#collection">Collection</a>
+          </li>
+          <li>
+            <a href="#gellery">Gellery</a>
+          </li>
+          <li>
+            <a href="#testimonials">Testimonials</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <!-- SOCIALS LINKS -->
+        <ul class="flex items-center gap-2">
+          <!-- Search -->
+          <li class="flex gap-2 items-center cursor-pointer">
+            <input
+              class="w-[100%] px-2 py-1.5 ring-1 ring-gray-300 bg-white rounded-full outline-none"
+              type="text"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-search"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+          </li>
+          <div class="md:flex hidden items-center gap-2">
+            <!-- facebook -->
+            <li>
+              <a href="https://www.facebook.com" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-facebook"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <!-- insta -->
+            <li>
+              <a href="https://www.instagram.com" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-instagram"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+              </a>
+            </li>
+            <!-- painterest -->
+            <li>
+              <a href="https://www.pinterest.com" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  style="fill: black"
+                >
+                  <path
+                    d="M11.99 2C6.472 2 2 6.473 2 11.99c0 4.232 2.633 7.85 6.35 9.306-.088-.79-.166-2.006.034-2.868.182-.78 1.172-4.966 1.172-4.966s-.299-.599-.299-1.484c0-1.388.805-2.425 1.808-2.425.853 0 1.264.64 1.264 1.407 0 .858-.546 2.139-.827 3.327-.235.994.499 1.805 1.479 1.805 1.775 0 3.141-1.872 3.141-4.575 0-2.392-1.719-4.064-4.173-4.064-2.843 0-4.512 2.132-4.512 4.335 0 .858.331 1.779.744 2.28a.3.3 0 0 1 .069.286c-.076.315-.245.994-.277 1.133-.044.183-.145.222-.335.134-1.247-.581-2.027-2.405-2.027-3.871 0-3.151 2.289-6.045 6.601-6.045 3.466 0 6.159 2.469 6.159 5.77 0 3.444-2.171 6.213-5.184 6.213-1.013 0-1.964-.525-2.29-1.146l-.623 2.374c-.225.868-.834 1.956-1.241 2.62a10 10 0 0 0 2.958.445c5.517 0 9.99-4.473 9.99-9.99S17.507 2 11.99 2"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </div>
+          <li class="md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-align-right"
+            >
+              <path d="M21 12H9" />
+              <path d="M21 18H7" />
+              <path d="M21 6H3" />
+            </svg>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <div></div>
+    <!-- FOOTER -->
+    <div></div>
+  </body>
+</html>
