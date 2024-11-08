@@ -37,34 +37,19 @@
   </head>
   <body class="bg-white text-black overflow-x-hidden">
     <!-- HEADER -->
-    <header class="w-full bg-grey">
+    <header
+      class="h-24 flex border-b items-center fixed z-[100] top-0 right-0 left-0 w-full text-white backdrop-blur-sm"
+    >
       <nav
-        class="w-full flex items-center justify-between gap-10 container mx-auto font-bold h-24"
+        class="w-full flex items-center justify-between text-black gap-10 container mx-auto font-bold"
       >
         <!-- LOGO -->
-        <a class="text-2xl flex items-center" href="#"
-          >Elegance <br class="md:hidden" />Jewellery
-          <span class="text-[#FFD700]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              class="size-9"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
-              />
-            </svg> </span
-        ></a>
-
+        <a class="md:text-2xl text-xl" href="#">Elegance Gold</a>
+        <!--  -->
         <!-- SECTION LINKS -->
         <ul class="md:flex items-center hidden md:gap-3.5">
           <li>
-            <a class="" href="#">Home</a>
+            <a href="#">Home</a>
           </li>
           <li>
             <a href="#collection">Collection</a>
@@ -81,12 +66,13 @@
         </ul>
 
         <!-- SOCIALS LINKS -->
-        <ul class="flex items-center gap-2">
+        <ul class="flex items-center gap-2 text-black">
           <!-- Search -->
           <li class="flex gap-2 items-center cursor-pointer">
             <input
-              class="w-[100%] px-2 py-1.5 ring-1 ring-gray-300 bg-white rounded-full outline-none"
+              class="w-[100%] px-2 py-1.5 ring-1 ring-gray-500 bg-black text-grey rounded-full outline-none"
               type="text"
+              placeholder="Gold Neckless"
             />
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +150,7 @@
               </a>
             </li>
           </div>
-          <li class="md:hidden">
+          <li class="md:hidden cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -185,8 +171,15 @@
         </ul>
       </nav>
     </header>
+
     <!-- MAIN -->
-    <div></div>
+    <div class="h-[100vh] w-full overflow-hidden">
+      <img
+        class="w-full h-full object-cover"
+        src="assets/7060763ee3d51caa7150c62069863687.jpg"
+        alt=""
+      />
+    </div>
     <!-- FOOTER -->
     <div></div>
   </body>
