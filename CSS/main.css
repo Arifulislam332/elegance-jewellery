@@ -7,16 +7,9 @@
 body {
   margin: 0;
   padding: 0;
+  color: var(--var--black);
 }
 li > input,
 li > input::placeholder {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-nav > ul > li > a:hover {
-  color: goldenrod;
-}
-nav > ul > li > a:active {
-  color: goldenrod;
+  font-size: 12px;
 }
