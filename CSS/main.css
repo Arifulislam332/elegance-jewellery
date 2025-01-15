@@ -13,3 +13,10 @@ li > input,
 li > input::placeholder {
   font-size: 12px;
 }
+
+q:after,
+q:before {
+  color: #F29F58;
+  font-weight: bold;
+  font-size: large;
+}
